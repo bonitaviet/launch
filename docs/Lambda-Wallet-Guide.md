@@ -1,49 +1,47 @@
-# Lambda钱包使用说明
-版本 0.5.53 
+# Lambda wallet instructions
+Version 0.5.53
 
-一个钱包支持创建和管理多个账户，支持语言有中文和英文。
+One Lambda wallet supports creating and managing multiple accounts. At present, wallet only support Chinese and English.
 
 
-下载地址 ：  
+Download here: 
 [https://github.com/LambdaIM/launch/releases/tag/Wallet0.5.53](https://github.com/LambdaIM/launch/releases/tag/Wallet0.5.53)  
 [http://download.lambdastorage.com/wallet/0.5.53/](http://download.lambdastorage.com/wallet/0.5.53/)
 
 
 ![avatar](img/wallethome@2x.png)
 
-* [创建账号](#创建账号)
-* [助记词导入到节点的程序包](#助记词导入到节点的程序包)
-* [导入账号](#导入账号)
-* [钱包首页说明](#钱包首页说明)
-* [领取测试网测试币](#领取测试网测试币)
-* [转账](#转账)
-* [导出账号配置文件](#导出账号配置文件)
-* [更换钱包链接的Validator节点](#更换钱包链接的Validator节点)
-* [LAMB兑换TBB](#LAMB兑换TBB)
-* [查看验证节点和质押](#查看验证节点和质押)
-* [转质押](#转质押)
-* [取消质押](#取消质押)
-* [查看合伙人和质押](#查看合伙人和质押)
-* [提取奖励](#提取奖励)
-* [提取节点收益](#提取节点收益)
-* [查看资产和交易资产](#查看资产和交易资产)
-* [提案与存入押金和投票](#提案与存入押金和投票)
-* [市场与买卖空间](#市场与买卖空间)
-* [打开lambdaS3控制台](#打开lambdaS3控制台)
-* [主网和测试网的切换](#主网和测试网的切换)
-* [挖矿子账户创建导出导入](#挖矿子账户创建导出导入)
-* [初始化矿工](#初始化矿工)
-* [选择使用钱包身份角色](#选择使用钱包身份角色)
-* [挖矿向导](#挖矿向导)
-* [设置gas价格](#设置gas价格)
-* [提取订单佣金](#提取订单佣金)
-* [订单续期](#订单续期)
-* [市场质押](#市场质押)
-* [提取市场质押收益](#提取市场质押收益)
+* [Create Account] (#Create Account)
+* [Import mnemonic into the node package] (#Import mnemonic into the node package)
+* [Import Account] (#Import Account)
+* [Wallet homepage description] (#wallet homepage description)
+* [Receive Testnet Test Coin] (#Receive Testnet Test Coin)
+* [Transfer] (#transfer)
+* [Export Account Configuration File] (#Export Account Configuration File)
+* [Replace Pledge node of wallet link] (#Replace Pledge node of wallet link)
+* [LAMB to TBB] (#LAMB to TBB)
+* [View verification node and Pledge] (#View verification node and Pledge)
+* [Transfer Pledge] (#Transfer Pledge)
+* [Cancel Pledge] (#Cancel Pledge)
+* [View partner and Pledge] (#View partner and Pledge)
+* [Extraction Reward] (#Extraction Reward)
+* [Extract Node Profit] (#Extract Node Profit)
+* [View assets and trading assets] (#View assets and trading assets)
+* [Proposal and Deposit and Voting] (#Proposal and Deposit and Voting)
+* [Market and Trading Space] (#Market and Trading Space)
+* [Open lambdaS3 console] (#Open lambdaS3 console)
+* [Switching between mainnet and testnet] (#Switching between mainnet and testnet)
+* [Create mining sub-account, export and import] (#Create mining sub-account, export and import)
+* [Initialize Miner] (#Initialize Miner)
+* [Select Use Wallet Identity Role] (#Select Use Wallet Identity Role)
+* [Mining Guide] (#Mining Guide)
+* [Set gas fee] (#Set gas fee)
+* [Withdraw order commission] (#Withdraw order commission)
+* [Order Renewal] (#Order Renewal)
+* [Pledge Market] (#Pledge Market)
+* [Withdraw Market Validated Income] (#Withdraw Market Validated Income)
 
-
-
-## 切换语言
+## Switch language
 
 ![avatar](img/lang@2x.png)
 ## 账号创建和导入
@@ -51,48 +49,54 @@
 点击 Create Wallet  进入创建钱包的页面
 
 输入钱包名称，密码，确认钱包密码，点击 Create 按钮，
+## Create and import an account
+### Create an account
+Click Create Wallet to enter the page for creating a wallet
 
+Enter the wallet name and password, confirm the wallet password, and click the Create button,
 ![avatar](img/create@2x.png)
 
-点击 Create按钮后，进入助记词页面
+After clicking the Create button, enter the mnemonic page
 
 
-请妥善保管助记词，以便以后恢复钱包，点击Next Step进入下一页
-最好在纸片上记录下助记词，助记词也可以导入到节点程序中。
+Save the mnemonic words in the right order for future restore purpose, click Next Step to enter the next page.
+It is advised to write down the mnemonic words on paper. Mnemonic words are used to import into node programs. 
 
 ![avatar](img/word@2x.png)
 
-在确认助记词的页面，按照刚才显示的助记词顺序，点击页面上的单词
+In the mnemonic words confirmation page, fill in the words in the right order for restoring account.
 
 ![avatar](img/select@2x.png)
 
-点击完成后的页面
+Click to complete
 
 ![avatar](img/selectall@2x.png)
 
-点击 Export Keystore File  以便备份钱包。
+Click Export Keystore File to backup the wallet.
 
 ![avatar](img/file@2x.png)
 
-通过lambda**********.keyinfo可以再次导入钱包
+You can import the wallet again through lambda********.keyinfo
 
-通过钱包创建账号到此完成
+Create an account through the wallet
 
-### 助记词导入到节点的程序包
 
-验证节点和矿工可以将钱包中的账号导入到挖矿程序包中(lambda chain)，运行挖矿程序
+### Import Mnemonic words into the node's package
 
-创建账号后，保存好助记词，助记词支持导入到验证节点和矿工的程序中
+Verification nodes and miners can import the account in the wallet into the mining package (lambda chain) and run the mining program.
 
-例如 助记词导入到节点的程序包
+After creating an account, save the mnemonic words, which can be imported into the verification node and miner programs.
 
-使用lambdacli调用命令行
+For example, the mnemonic is imported into the node's package
+
+Use lambdacli to call the command line
+
 
 ```bash
 ./lambdacli keys add [name] --recover
 ```
 
-根据提示两次输入密码
+Enter the password twice as prompted to confirm
 
 ```bash
 Enter a passphrase to encrypt your key to disk:
@@ -101,93 +105,91 @@ Repeat the passphrase:
 ![avatar](img/zhujici.png)
 
 
-看到后面输出账户的地址如果和钱包一致，则表示导入成功
+If the address of the output account is the same as the wallet, the import is successful
 
 **tips**
-注意，示例里面的助记词组合只是一个用例账户
+Note that the mnemonic combination in the example is just a test account
 
 
+### Import Account
 
-### 导入账号
+Click on the Import wallet to enter the account import page
 
-点击首页 import wallet  进入导入账号的页面
+![avatar](img/import@2x.png)
 
-![avatar](img/import@2x.png)   
+Click Choose Wallet Files to select the backup file of the account
 
-点击 Choose Wallet Files 选择账号的备份文件
+The backup file suffix is ​​keyinfo, for example, the configuration file created by the wallet is lambda.keyinfo
 
-备份文件后缀为 keyinfo,例如钱包创建的配置文件为lambda.keyinfo
+Enter the password when creating the wallet, then enter the name of the new wallet, and click Import to import the wallet
 
-输入创建钱包时候的密码，再输入新的钱包的名称，点击 import ,即可导入钱包
+## Wallet Home Description
+The newly created account has a balance of 0 and no transaction history
 
-## 钱包首页说明
-新创建的账号，余额为0，也没有交易记录
+![avatar](img/home2@2x.png)
 
-![avatar](img/home2@2x.png)  
+At the top is the navigation menu, click the settings button to enter the settings page, click the account address to copy the account
 
-顶部是导航菜单，点击设置按钮进入设置页面，点击账号地址可以复制账号
+At the bottom is the information of the Validator node connected to the wallet, including the node's public key address, block height, and block generation time
 
-底部是钱包连接的Validator 节点的信息，包含节点的公钥地址，区块的高度，出块时间
-
-账号有了交易记录的效果图
+The account has a rendering of the transaction record
 
 ![avatar](img/home@2x.png)
 
-## 领取测试网测试币
+## Receive testnet test coins
 
-登录钱包账户后，点击首页的活动链接
+After logging in to your wallet account, click on the activity link on the homepage
 ![avatar](img/WXceshicoin1.png)
-跳转到 
+redirect to 
 [http://faucet.lambda.im/](http://faucet.lambda.im/)
 ![avatar](img/WXceshicoinget.png)
-输入 创建的lambda主网地址，例如 lambda163q4m634nq8les4nuvdvz49tk6aeh926t0**** 
+Enter the created lambda main network address, for example lambda163q4m634nq8les4nuvdvz49tk6aeh926t0****
 
-现在支持 领取测试网的LAMB和TBB,用以进行存储挖矿测试
+Now the account will receive LAMB and TBB of the testnet for storage mining testing
 
-领取规则：  
-一个IP每天可以领取50000个LAMB,5个TBB；  
-一个lambda主网地址，可以领取10次LAMB和TBB
+Receipt rules:
+One IP can receive 50000 LAMB and 5 TBB every 24 hours;
+For a Lambda main network address, you can receive LAMB and TBB capped 10 times.
 
 
 
-## 转账
-点击首页的 Transfer 按钮 ，弹出转账对话框，填写转账的地址和金额
+## Transfer
+Click the Transfer button on the home page, a transfer dialog box pops up, fill in the address and amount of the transfer
 
 ![avatar](img/send@2x.png)
 
-点击下一步，预览交易信息，可以修改gas
+Click Next, preview the transaction information, then modify the gas if needed
 ![avatar](img/send3@2x.png)
-点击确定。弹出输入钱包密码的对话框，输入钱包密码
+Click OK. A dialog box for entering the wallet password pops up, fill in the wallet password
 
 ![avatar](img/pasword@2x.png)
 
-点击Submit，等待10s左右转账完成,转账成功效果如下
+Click Submit and wait for the transfer to be completed in about 10s. Once sucessfully transferred, the display is as follow:
 
 ![avatar](img/ok@2x.png)
 
-点击View Detail 查看转账详情
+Click View Detail to view transaction details
 
 ![avatar](img/view@2x.png)
 
-## 导出账号配置文件
+## Export account configuration file
 
-在设置页面点击 Keystore File Backup,即可查看账号备份文件
+Click Keystore File Backup on the settings page to view the account backup file
 
 ![avatar](img/set@2x.png)
 
-## 更换钱包链接的Validator节点
-在设置页面点击 Switch Validator 进入 查看Validator信息的页面
+## Change the Pledge node of the wallet link
+Click Switch Pledgeon the settings page to enter the page for viewing Pledge information
 
 ![avatar](img/info@2x.png)
 
-在输入框里面更改节点的IP地址,点击 Submit，切换成功后提示信息如下 
+Change the IP address of the node in the input box, click Submit, the prompt message is as follows after the switch is successful
 
 ![avatar](img/ok2@2x.png)
 
+## LAMB to TBB
 
-## LAMB兑换TBB
-
-TBB可用于质押
+TBB can be used for Pledge
 
 ![avatar](img/duihuan1@2x.png)
 
@@ -195,350 +197,331 @@ TBB可用于质押
 
 
 
-## 质押相关操作
-### 查看验证节点和质押
+## Pledge related operations
+### View verification nodes and Pledge
 ![avatar](img/valist@2x.png)
-第一列 我的质押列表
-第二列 验证节点列表
-点击到验证节点 列表
+The first column My Pledge list
+Second column Verification node list
+Click to verify node list
 ![avatar](img/valist2@2x.png)
-点击查看验证节点详细信息
+Click to view verification node details
 ![avatar](img/vainfo@2x.png)
-点击质押按钮进行质押
+Click the Pledge button to validate
 ![avatar](img/zhiyainfo@2x.png)
-
-### 转质押
-在节点的详情页面点击转质押按钮
+### Transfer pledge
+Click the transfer pledge button on the node's details page
 ![avatar](img/WXrv1@2x.png)
-点击即可打开转质押窗口
+Click to open the pledge window
 
-填写需要转质押多少tbb，选择新的节点即可
+Fill in how many TBB needed to be transferred and select a new node
 
-（如果要转全部tbb，可能会失败，建议质押总量-0.1 个tbb 转质押比较容易成功）
+(If you want to transfer all TBB, it may fail. It is recommended that the total pledge -0.1 tbb be transferred to pledge is easier to succeed)
 
 ![avatar](img/WXr2@2x.png)
-### 取消质押
-在节点的详情页面点击取消质押按钮
+### Cancel pledge
+Click the cancel pledge button on the node's details page
 ![avatar](img/cancel1@2x.png)
-点击即可打开取消质押窗口
+Click to open the cancel pledge window
 ![avatar](img/cancel2@2x.png)
-填写需要取消质押多少tbb
+Fill in how many TBBs need to be cancelled
 
-（如果要取消全部tbb，可能会失败，建议质押总量-0.1 个tbb 取消质押比较容易成功）
+(If you want to cancel all TBB, it may fail, it is recommended that the total pledge -0.1 tbb cancel pledge is easier to succeed)
 
 
-### 查看合伙人和质押
-第一列 我的质押
-第二列 合伙人列表
+### View partners and pledges
+First column my pledge
+Column 2 List of partners
 ![avatar](img/plist@2x.png)
-点击合伙人列表 查看全部的合伙人信息
+Click on the partner list to view all partner information
 ![avatar](img/plist2@2x.png)
-点击查看合伙人详情
+Click to view partner details
 ![avatar](img/pinfo@2x.png)
-点击质押按钮可以进行质押
+Click the pledge button to pledge
 ![avatar](img/zhiya2@2x.png)
 
-## 提取奖励相关操作
-### 提取奖励
-在首页点击【提取奖励】下拉菜单中的【提取奖励】
+## Extract reward-related operations
+### Withdraw rewards
+Click [Extract Rewards] in the [Extract Rewards] drop-down menu on the homepage
 ![avatar](img/wv3@2x.png)
 ![avatar](img/wi1@2x.png)
 
 
-### 提取节点收益
-在首页点击【提取奖励】下拉菜单中的【提取节点收益】
+### Extract node revenue
+Click [Extract Node Revenue] in the [Extract Reward] drop-down menu on the homepage
 ![avatar](img/wv1@2x.png)
-即可打开提取节点收益的窗口
+You can open the window for extracting node revenue
 ![avatar](img/wv2@2x.png)
 
 
-### 查看资产和交易资产
-在钱包首页点击资产标签，可以查看当前账户下有哪些资产
+### View assets and trading assets
+Click the Assets tab on the wallet homepage to view which assets are in the current account
 ![avatar](img/asset1@2x.png)
-点击交易按钮可以打开交易资产的窗口
+Click the trading button to open the window for trading assets
 ![avatar](img/asset2@2x.png)
 
-## 提案与存入押金和投票
-点击顶部的导航菜单中的【提案】，即可进入提案列表页面
+## Proposal and deposit and voting
+Click [Proposal] in the navigation menu at the top to enter the proposal list page
 ![avatar](img/t1@2x.png)
-点击提案的的文字描述部分进入提案详情页面
+Click the text description part of the proposal to enter the proposal details page
 ![avatar](img/t2@2x.png)
 
-提案状态为【押金阶段】时，可以给提案存入押金
-点击存入押金按钮打开存入押金对话框
+When the status of the proposal is [deposit stage], a deposit can be deposited for the proposal
+Click the Deposit Deposit button to open the Deposit Deposit dialog
 ![avatar](img/t3@2x.png)
-当存入总押金满足要求后，提案会进入【投票阶段】，点击投票按钮打开投票对话框
+When the total deposit is satisfied, the proposal will enter the [voting stage], click the voting button to open the voting dialog box
 
 ![avatar](img/t4@2x.png)
-投票可以选择 同意 、反对、强烈反对、弃权
+Vote can choose to agree, oppose, strongly oppose, abstain
 
-如果第一次投票投错了，没关系第二次投票会覆盖第一次投票的结果
+If the first vote is wrong, it does not matter that the second vote will overwrite the result of the first vote
 
-投票的权重等于质押量，在节点质押和在合伙人质押都是有效质押
+The weight of voting is equal to the amount of pledge. Both the pledge at the node and the partner pledge are effective pledges.
 
-如果没有质押过，投票无效
+If there is no pledge, the vote is invalid
 
-## 市场与买卖空间
+## Market and trading space
 
-点击导航栏的市场链接进入市场页面
+Click the market link in the navigation bar to enter the market page
 
 
-### 我的订单列表 
-订单列表包含买单和卖单
+### My order list
+Order list contains buy and sell orders
 
 ![avatar](img/WXmk1@2x.png)
 
-购买空间 
+Purchase space
 
-购买空间有两种方式：一种是自动匹配购买，一种是选择某一个矿工优质卖单购买。
+There are two ways to purchase space: one is to automatically match the purchase, and the other is to select a certain miner's high-quality sell order to buy.
 
-自动匹配购买的是赔率为0.5单价为5lamb的普通卖单。
+The automatic matching purchase is an ordinary sell order with odds of 0.5 unit price and 5 lamb.
 
-优质卖单是赔率为1单价大于5lamb的卖单，可指定购买。
+A high-quality sell order is a sell order with a odds of 1 unit price greater than 5lamb, and can be specified to buy.
 
 ![avatar](img/WXmk2@2x.png)
 
-自动匹配购买空间只需要填写空间的大小和时长，例如购买3个月 2GB的空间
+Automatic matching purchase space only needs to fill in the size and duration of the space, for example, purchase 3 months 2GB of space
 
 ![avatar](img/WXmk7@2x.png)
 
-购买矿工的优质买单需要先选择一个矿工，查看订单的最低购买空间大小、最短购买时长、最长时长是否满足自己的需求， 如果满足，填写空间大小和时长即可购买
+To purchase a high-quality purchase order from a miner, you need to select a miner first, and check whether the minimum purchase space size, minimum purchase duration, and maximum duration of the order meet your needs. If they are satisfied, fill in the space size and duration to purchase
 
 ![avatar](img/WXmk15@2x.png)
 
 
-### 出售空间
- 如当前账户是矿工账户，这里会列出这个账户在市场中挂的卖单列表
+### Sell space
+ If the current account is a miner's account, here will list the list of sell orders for this account in the market
  
 ![avatar](img/WXmk3@2x.png)
-在矿工管理程序中完成矿工和存储节点的启动后，可以在钱包中挂存储节点的卖单
+After completing the startup of miners and storage nodes in the miner management program, you can hang the sell order of the storage node in the wallet
 
 
-在弹出的对话框中选择存储节点，填写要卖的空间大小（一个存储节点只能挂一个卖单，建议一次出售全部空间）
+Select the storage node in the pop-up dialog box and fill in the size of the space to be sold (one storage node can only hang one sell order, it is recommended to sell all the space at once)
 
-、赔率、单价 还有限制用户购买的条件，最小购买的空间大小、最短时长、最长时长 即可
+, Odds, unit price and conditions that restrict users to purchase, the minimum purchase space size, the shortest duration, the longest duration can be
 
-关于赔率
-赔率=0.5不能指定价格，只能是5LAMB/G/month
+About odds
+Odds = 0.5 The price cannot be specified, only 5LAMB/G/month
 
-赔率=1需要指定价格,价格>=5LAMB/G/month
+Odds = 1 need to specify the price, price >= 5LAMB/G/month
 
-赔率=0.5为普通卖单,赔率>=1为优质卖单
+Odds = 0.5 for ordinary sell orders, odds> = 1 for high-quality sell orders
 
-只有优质卖单会出现在市场的列表里面，供用户选择，普通卖单只能进行自动匹配
-
+Only high-quality sell orders will appear in the market list for users to choose, ordinary sell orders can only be automatically matched
 
 ![avatar](img/marketd4.png)
 
 
 
-
-
- 在订单列表页面点击 查看详情进入订单的详情页面
+ Click View details on the order list page to enter the order details page
  
- 卖单的详情页面
+ Details page of sell order
  
 ![avatar](img/WXmk4@2x.png)
 
 
-## 打开lambdaS3控制台
-购买订单后，可以通过lambdaS3控制台来进行文件的上传下载，使用存储空间
+## Open the lambdaS3 console
+After the purchase order, you can upload and download files through the lambdaS3 console, using storage space
 
 ![avatar](img/markets2.png)
-这里可以修改登录s3 需要的用户名和密码
+Here you can modify the username and password required to log in to s3
 
-如果需要使用这个订单的空间，可以在lambda storage中上传文件到空间和删除空间中的文件
+If you need to use the space of this order, you can upload files to the space in the lambda storage and delete the files in the space
 
-在订单 详情页面 ，点击查看订单空间， 弹窗授权对话框，即可完成对这个订单的授权
+On the order details page, click to view the order space, a pop-up authorization dialog box, you can complete the authorization of this order
 
 ![avatar](img/markets1.png)
 
-在登录页面输入：
+Enter on the login page:
 
-钱包中提示的的lambda storage 控制台登录信息:密钥：lambda， 私钥：12345678
+The login information of the lambda storage console prompted in the wallet: key: lambda, private key: 12345678
 
-完成登录
+Complete login
 
 ![avatar](img/WXs32@2x.png)
 
-就可以上传文件了，将文件拖拽到文件列表区域即可上传文件
+You can upload the file, drag and drop the file to the file list area to upload the file
 
 ![avatar](img/WXs31@2x.png)
 
-## 主网和测试网的切换
-
-
-登录钱包后 点击页脚左侧的网络类型，进入节点选择页面
+## Switch between mainnet and testnet
+After logging into the wallet, click the network type on the left side of the footer to enter the node selection page
 
 ![avatar](img/WXqh@2x.png)
 
-点击默认主网ip 再点击提交 可切换到主网
+Click the default mainnet ip and click submit to switch to the mainnet
 
-点击默认测试网ip 再点击提交  可切换到测试网
+Click the default testnet ip and then click submit to switch to the testnet
 
-## 挖矿子账户创建导出导入
+## Mining sub-account creation, export and import
 
-在钱包首页点击挖矿，向导，点击下一步，直到看到创建子账户模块
+Click mining on the wallet homepage, wizard, click next, until you see the create sub-account module
 
 ![avatar](img/sonaccount.png)
 
-可以看到创建矿工子账户和导入按钮
+You can see the create miner sub-account and import button
 
-### 创建子账户
-点击创建子账户按钮，打开创建子账户弹窗
+### Create Sub Account
+Click the Create Sub Account button to open the Create Sub Account popup window
 
 ![avatar](img/sonaccountd1.png)
 
-创建矿工子账户需要输入当前钱包的助记词和密码，输入备注方便记忆
+To create a miner sub-account, you need to enter the mnemonic words and password of the current wallet, and enter a note to remember
 
-也可以导入钱包或区块链程序导出的子账户
+You can also import sub-accounts exported by wallets or blockchain programs
 
-### 导入子账户
-如果已有子账户json文件，可通过钱包导入子账户。如已进行上面创建子账户操作，可跳过此步。
+### Import sub-account
+If you have a subaccount json file, you can import the subaccount through the wallet. If you have already done the above operation to create a sub-account, you can skip this step.
 
-点击导入按钮，打开导入子账户弹窗
+Click the Import button to open the import sub-account pop-up window
 
 ![avatar](img/sonaccountd2.png)
 
-导入子账户需要选择子账户的json文件和当前钱包的密码
+Importing a sub-account requires selecting the json file of the sub-account and the password of the current wallet
 
-### 导出子账户
-如果需要在矿工管理程序或区块链程序中使用挖矿子账户，可以导出子账户
+### Export subaccount
+If you need to use the mining sub-account in the miner management program or blockchain program, you can export the sub-account
 
 ![avatar](img/sonaccountd3.png)
 
-导出子账户需要输入当前钱包的密码
+Exporting the sub-account requires entering the password of the current wallet
 
-例如 在矿工管理程序中选择钱包导出的子账户
+For example, select the sub-account exported by the wallet in the miner management program
 ![avatar](img/sonaccountd5.png)
 
-## 初始化矿工
+## Initialize miner
 
-点击导航菜单的挖矿向导，在挖矿向导页面点击下一步，直到看到初始化矿工模块
-点击矿工初始化按钮，打开创建矿工弹窗
+Click the Mining Wizard in the navigation menu and click Next on the Mining Wizard page until you see the Initial Miner Module
+Click the miner initialization button to open the create miner popup window
 ![avatar](img/minersetup.png)
 
-创建矿工需要选择钱包中的子账户和部署矿工服务器的dhtid
-可以在 矿工管理程序中获取一个矿工服务的 dhtid
-例如
+To create a miner, you need to select the sub-account in the wallet and deploy the dhtid of the miner server
+You can get the dhtid of a miner service in the miner management program
+E.g
 
 ![avatar](img/marketd3.png)
+## Choose to use the wallet identity role
 
-## 选择使用钱包身份角色
-
-第一次安装使用钱包会自动弹窗，之后需要切换身份，在设置页面点击角色的编辑按钮，就可以打开弹窗
+The first time you install and use the wallet, it will automatically pop up. After that, you need to switch your identity. Click the edit button of the role on the settings page to open the popup
 ![avatar](img/role.png)
 
-选择不同的角色，使用的功能略有差异
-#### 钱包用户
-查看资产，转账，质押挖矿，提案投票，提取质押奖励
+Choose different roles and use slightly different functions
+#### Wallet users
+View assets, transfer money, pledge mining, vote on proposals, withdraw pledge rewards
 
-#### 购买空间的用户
-查看资产，转账，质押挖矿，提案投票，购买空间，使用lambdas3，提取质押奖励
+#### Users who buy space
+View assets, transfer money, pledge mining, vote on proposals, buy space, use lambdas3, withdraw pledge rewards
 
-#### 矿工
-查看资产，转账，质押挖矿，提案投票，市场买卖空间，挖矿向导，提取质押奖励，提取存储挖矿奖励
+#### Miner
+View assets, transfer funds, pledge mining, vote for proposals, market trading space, mining wizard, extract pledge rewards, extract storage mining rewards
 
-#### 验证节点
-查看资产，转账，质押挖矿，提案投票 ，提取质押奖励，提取节点收益
+#### Verification node
+View assets, transfer funds, pledge mining, vote on proposals, extract pledge rewards, and extract node revenue
 
 
-## 挖矿向导
-选择矿工角色使用钱包，可以在导航菜单里看到挖矿向导的的菜单
+## Mining Wizard
+Select the role of miner to use the wallet, you can see the menu of the mining wizard in the navigation menu
 
 ![avatar](img/MiningGuide.png)
-挖矿向导 将矿工挖矿的步骤展示出来，
-并且整理了挖矿过程中需要用到的钱包的功能、和矿工管理程序的说明
+The mining guide shows the mining steps of the miners,
+And collated the functions of the wallet that need to be used in the mining process, and the description of the miner management program
 
-挖矿向导中包含钱包的功能有
+The features of the wallet included in the mining wizard are
 
-1质押挖矿
+1 Pledge mining
 
-2创建矿工子账户
+2 Create a miner sub-account
 
-3初始化矿工
+3 initialize miner
 
-4出售空间
+4 space for sale
 
+## Set gas fee
 
-
-
-## 设置gas价格
-
-在设置页面点击 编辑gas价格，打开弹窗，即可设置gas的价格
+Click Edit gas price on the setting page, open the pop-up window, you can set the gas fee
 ![avatar](img/Gasprice.png)
 
+## Withdraw order commission
 
-
-
-
-## 提取订单佣金
-
-钱包首页点击交易，点击提取订单佣金
+Click the transaction on the homepage of the wallet, click to withdraw order commission
 ![avatar](img/txlist2.png)
 
-打开提取订单收益的弹窗
+Open a pop-up window for withdrawing order revenue
 ![avatar](img/Orderrevenue.png)
-提取订单收益 是批量提取订单中的收益
-每次提取100个订单的收益
-如果订单比较多，可以尝试分页地区，例如提取第一页面，提取第二页，
-提取规则如下
+Withdrawal order revenue is the revenue from the batch withdrawal order
+Withdraw 100 orders at a time
+If there are many orders, you can try to divide the area, for example, extract the first page, extract the second page,
+The extraction rules are as follows
 
-每100个订单为1页，订单数量比较多，页码可以填写1、2、3、4、5、6等
+Each 100 orders is 1 page, the order quantity is relatively large, the page number can be filled in 1, 2, 3, 4, 5, 6 etc.
 
-一次只能同时提取100个订单的收益
+Can only withdraw 100 orders at a time
 
-提取操作时间限制1小时提取一次
-订单中的收益是24小时计算一次，如果未到24小时发起提取，提取到的金额为0
+Extraction operation time limit is 1 hour extraction
+The revenue in the order is calculated once every 24 hours. If the withdrawal is not initiated within 24 hours, the amount withdrawn is 0
 
-## 订单续期
+## Order renewal
 
-订单的使用时间需要增加，可以通过订单续期实现，在订单详情页面，点击订单需求按钮，打开对话框
+The usage time of the order needs to be increased, which can be achieved by order renewal. On the order details page, click the order demand button to open the dialog box
 ![avatar](img/ordertime.png)
-续期的价格和购买空间时候相同，
-订单到期后无法续期
+The price of the renewal is the same as when the space was purchased,
+Cannot be renewed after the order expires
 
-## 市场质押
-在首页点击市场质押按钮，即可打开市场质押说明页面
+## Market pledge
+Click the market pledge button on the homepage to open the market pledge description page
 
 ![avatar](img/Marketpledge.png)
 
 
-只有用户创建的市场可以质押，默认的lambdamarket是不可以质押的
+Only markets created by users can be pledged, and the default lambdamarket cannot be pledged
 
-市场质押的最小金额 1,000 LAMB
+Market pledged minimum amount of 1,000 LAMB
 
-允许在多个市场中质押
+Allow pledge in multiple markets
 
-用户可以通过质押的方式参与用户创建的市场的运营。 
+Users can participate in the operation of the market created by users by way of pledge.
 
-市场收益是挂单手续费、成单手续费、续期手续费组成。
+The market income is composed of the order processing fee, the order processing fee and the renewal processing fee.
 
-市场中的每笔收入会按照市场质押比例来进行分配。
+Each income in the market will be distributed according to the market pledge ratio.
 
-收益分配规则：
+Income distribution rules:
 
-市场创建人收取市场收益10%
+Market creator charges 10% of market revenue
 
-市场质押人按照质押比例分配剩余的90%（市场创建人也在分配集合中）
+The market pledger allocates the remaining 90% according to the pledge ratio (the market creator is also in the distribution set)
 
-点击市场质押按钮，打开市场质押对话框，即可进行质押
+Click the market pledge button to open the market pledge dialog box, you can pledge
 ![avatar](img/MarketpledgeModel.png)
 
-## 提取市场质押收益
+## Extract market pledge income
 
 ![avatar](img/Withdrawmarketrevenue.png)
 
-在首页交易的下拉列表中点击提取市场收益，打开提取市场收益的对话框
+Click on Extract Market Revenue from the drop-down list on the homepage transaction
 
-选择质押的市场，即可点下一步，提取市场质押收益
+Choose the pledged market, you can click the next step to extract the market pledged income
 
 ![avatar](img/Withdrawmarketrevenuemodel.png)
-
-
-
-
-
 
 
 

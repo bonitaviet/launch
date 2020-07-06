@@ -1,5 +1,5 @@
 # 应用开发指导
-## 配置环境
+## client configuration
 
 ### 配置客户端
 
